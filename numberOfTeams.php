@@ -6,7 +6,7 @@ $numberOfTeams = count($teams);
 ?>
 
 <article>
-  <h1>Number of teams in table: <?php echo $numberOfTeams ?></h1>
+  <h2>Number of teams in table: <?php echo $numberOfTeams ?></h2>
 </article>
 
 
