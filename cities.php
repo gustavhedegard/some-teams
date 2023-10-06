@@ -1,14 +1,23 @@
 <?php
 require __DIR__ . "/data.php";
 
-foreach($teams as $team) {
-  if($team['city']  'London') {
-    continue;
-  }
-  echo $team['city'] . "<br>";
+$cities = array();
+
+foreach ($teams as $teamInfo) {
+    if (isset($teamInfo['city'])) {
+        $cities[] = $teamInfo['city'];
+    }
 }
+
+$uniqueCities = array_unique($cities);
+
 ?>
 
 <article>
-  <p>Unique cities in table: <?php ?></p>
+  <p>Unique cities in table: 
+    <?php
+    foreach($uniqueCities as $city) {
+      echo $city . ", ";
+    }
+    ?></p>
 </article>

@@ -9,6 +9,8 @@ require __DIR__ . "/teamTable.php";
 
 require __DIR__ . "/numberOfTeams.php";
 
+require __DIR__ . "/cities.php";
+
 ?>
 
 </body>
